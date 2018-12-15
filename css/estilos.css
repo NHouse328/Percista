@@ -5,15 +5,15 @@ body {
 
 
 h1 {
-	font-size: 35px;
+	font-size: 250%;
 	text-align: center;
 	background: white;
 	position: absolute;
 	border-right: 0.5em solid black;
 	border-left: 0.5em solid black;
-	top: 1em;
-	left: 5em;
-	width: 5em 
+	top: 0.1em;
+	left: 15em;
+	width: 5em; 
 }
 
 
@@ -38,6 +38,10 @@ p {
 	color: red;
 	background: white;
 	font-style:italic;
-	font-size: 50px;
-
+	font-size: 20px;
+	position: absolute;
+	top: 10em;
+	left: 10em;
+	width: 25em; 
+	border-right: 1em solid black }
 }
