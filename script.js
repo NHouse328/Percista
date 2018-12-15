@@ -1,2 +1,12 @@
-var time = new Date();
-console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
+function Time() {
+	var time = new Date();
+	alert(time)
+}
+
+function Hello() {
+   alert("Hello, World");
+}
+
+function EventHandler() {
+            alert("Funciona");
+}
