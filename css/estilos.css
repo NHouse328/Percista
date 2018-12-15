@@ -1,0 +1,13 @@
+
+body {
+	background: lightgrey;
+}
+
+
+p {
+	color: red;
+	background: white;
+	font-style:italic;
+	font-size: 50px;
+
+}
