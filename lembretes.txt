@@ -1,0 +1,9 @@
+<src=""> source = origem = caminho para chegar no arquivo
+
+<header></header> = cabeçalho
+
+dentro do <> define id id="" nome do id
+<header id="cabeçalho">
+
+<br> quebra linha
+<wbr> quebra palavra no meio caso necessario no canto ta pagina
