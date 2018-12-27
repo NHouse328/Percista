@@ -2,3 +2,14 @@
 h1 {
   color: blue;
 }
+#rc {
+	position: absolute;
+	top: 10em;
+	left: 50%;
+}
+
+#c {
+  position: absolute;
+  top: 30em;
+  left: 20em;
+}
