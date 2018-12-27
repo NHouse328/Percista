@@ -1,4 +1,4 @@
-var canvas = document.getElementById("canvas");
+var canvas = document.getElementById("c");
 var ctx = canvas.getContext("2d");
 
 var grd = ctx.createLinearGradient(0, 150, 0, 0);
@@ -18,3 +18,6 @@ ctx.beginPath();
 ctx.fillStyle = "black";
 ctx.font = "30px Arial";
 ctx.fillText("Hello World", 10, 50);
+
+//  var img = document.getElementById("scream");
+//  ctx.drawImage(img, 10, 10);
