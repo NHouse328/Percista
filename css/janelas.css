@@ -1,0 +1,179 @@
+body{
+    margin:0;
+}
+
+main{
+    width: 70%;
+    min-width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 1%;
+}
+        
+main:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header{
+    background-color: darkseagreen;
+    margin: 1%;
+    margin-bottom: 0;
+    height: 80px;                
+}
+        
+.logo{
+    line-height: 80px;
+    float: left;
+    margin: 0;
+    margin-left: 1%;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+        
+.menu{
+    float: right;
+    line-height: 80px;
+    margin: 0;
+}
+        
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.menu a:hover{
+    color: #777;
+    background-color: mediumaquamarine;
+}
+
+.show-menu-btn{
+    float: right;
+    margin-right: 3%;
+    font-size: 2em;
+    color: aliceblue;
+}
+        
+.show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn:hover,.hide-menu-btn:hover{
+    color: #777
+}
+        
+.show-menu-btn i{
+    line-height: 60px;
+}
+        
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+/* Animação */
+@media screen and (max-width:800px) {
+    .show-menu-btn,.hide-menu-btn{
+        display: block;
+    }
+            
+    .menu{
+        position: fixed;
+        width: 30%;
+        height: 100vh;
+        background-color: darkseagreen;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 60px 0;
+        line-height: normal;
+        transition: 0.4s;
+        list-style: none;
+    }
+            
+    .menu a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+            
+    .hide-menu-btn{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: aliceblue;
+        font-family: monospace;
+        font-size: 1.5em;
+    }
+            
+    #chk:checked ~ .menu{
+        right: 0;
+    }
+}
+/* Animação fim*/
+        
+.janela {
+    width: 36%;
+    height: auto;
+    background-color: aqua;
+    padding: 1%;
+    float: left;
+    margin: 1%;
+}
+
+aside{
+    background-color: cyan;
+    float: left;
+    width: 16%;
+    margin: 1%;
+    padding: 1%;
+    height: 300px;
+}
+        
+h1, h2, h3{
+    margin: 3%;
+    text-align: center;
+    background-color: darkkhaki;
+}
+        
+p{
+    background-color: burlywood;
+    margin: 3%;
+}
+        
+#img1{
+    width: 44%;
+    max-width: 200px;
+    margin: 3%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left
+}
+
+/*
+p:first-letter{
+    font-size: 2em;
+    line-height: ;
+    margin: 0 5px 0 0;
+    float: left;
+    font-family: Georgia,"Times New Roman",sarif;
+}
+*/
+footer{
+    background-color: aquamarine;
+    clear: both;
+    margin: 1%;
+    text-align: center;
+}
