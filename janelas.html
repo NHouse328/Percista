@@ -4,10 +4,84 @@
         <title>Aula do Udemy</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/janelas.css">
+        <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        
+        $(window).resize(function(e){
+                redimencionar();    
+            });
+        
+        function mostrarMensagem(){
+                alert("Funfa aqui !");
+                $('#cursohtml').off("mouseover", mostrarMensagem);
+        };
+        
+        function redimencionar(){
+          
+                var alturadajanela = $(window).height();
+            
+                $('.aba').css('min-height',alturadajanela);     
+                
+                $('html,body').css('background-color',green);
+            };
+        
+        function aplicarCor(e){
+          $('#bloco1').css('background-color', e.data.cor)  
+        };
+        
+        $(function(e){
+            
+            $('#btnazul').on("click", {cor:'blue'}, aplicarCor);
+            
+            $('#btnverde').on("click", {cor:'green'}, aplicarCor);
+            
+            $('#btnvermelho').on("click", {cor:'red'}, aplicarCor);
+            
+            $('#mostrar').click(function(e){
+                $('#bloco1').slideDown(300);
+            });
+            
+            $('#esconder').click(function(e){
+                $('#bloco1').fadeOut(300);
+            });
+            
+            $('#cursohtml').click(function(e){
+                alert("Clicou aqui ?");
+            });
+            
+            $('#cursohtml').on("mouseover", mostrarMensagem);
+            
+            $('#scroll li:nth-child(1)').click(function(e){
+                $('html,body').animate( {scrollTop:$('#janela1').offset().top}, 500);
+            });
+            
+            $('#scroll li:nth-child(2)').click(function(e){
+                $('html,body').animate( {scrollTop:$('#janela2').offset().top}, 500);
+            });
+            
+            $('#scroll li:nth-child(3)').click(function(e){
+                $('html,body').animate( {scrollTop:$('#janela3').offset().top}, 500);
+            });      
+            redimencionar(); 
+        });
+        
+        
+        
+    </script>
+    <noscript>Seu browser não suporta JavaScript!</noscript>
     </head>
 
     <body>
-        <main>
+        
+        <div id="scroll">
+            <ul>
+                <li>Alinhamentos de Janela</li>
+                <li>Eventos Jquerry</li>
+                <li>Aula Botões e eventos</li>
+            </ul>
+        </div>
+        
+        <main class="aba" id="janela1">
             <h1 style=" margin: 1%">Alinhamentos de Janela</h1>
 
             <header>
@@ -39,11 +113,11 @@
 
                 <h2>Titulo 1</h2>
 
-                <img src="imagens/galeria.png" id="img1">
-
                 <h3> subtitulo 1</h3>
 
-                <p>Funciona bem como planejado até a quebra das palavras na imagem ficou legal, precisa de mais texto aqui então vou escrever coisas aleatorias para encher a caixa de texto</p>
+                <img src="imagens/galeria.png" id="img1">
+                
+                <p id="pimg">Funciona bem como planejado até a quebra das palavras na imagem ficou legal, precisa de mais texto aqui então vou escrever coisas aleatorias para encher a caixa de texto</p>
 
                 <p>começei outro paragrado para teste aquide como vai se comportar</p>
 
@@ -65,12 +139,50 @@
 
             </aside>
 
-            <footer>
-
-                <small>&copy; Copyright 2019 - Todos os direitos Gabriel Casanova Silva.</small>
-
-            </footer>
-        </main>    
+        </main> 
+        
+        <nav class="aba" id="janela2">
+            
+            <h1 style=" margin: 1%">Eventos Jquerry</h1> 
+            
+        </nav>
+        
+        <nav class="aba" id="janela3">
+            
+            <h1 style=" margin: 1%">Aula Botões e eventos</h1>
+            
+            <input type="button" id="cursohtml" value="Curso HTML5">
+            
+            <input type="button" id="mostrar" value="Mostrar">
+            
+            <input type="button" id="esconder" value="Esconder">
+            
+            <br>
+            
+            <input type="button" id="btnvermelho" value="Vermelho">
+            
+            <input type="button" id="btnverde" value="Verde">
+            
+            <input type="button" id="btnazul" value="Azul">
+            
+            <div id="bloco1"></div>
+            
+        </nav>
+        
+        <footer>
+            /
+            <address> 
+            Telefone : 
+                <a href="+55(011)993744012">+55(011)993744012</a> -
+            </address>
+            <address>Email : 
+                <a href="gabrielcasanova328@gmail.com">gabrielcasanova328@gmail.com</a>
+            </address>
+            /
+            <small>&copy; Copyright 2019 - Todos os direitos Gabriel Casanova Silva.</small>
+            /
+        </footer>
+        
     </body>
 
 </html>

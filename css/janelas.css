@@ -5,10 +5,10 @@ body{
 main{
     width: 70%;
     min-width: 700px;
-    height: 100%;
     margin: 0 auto;
     background-color: antiquewhite;
     padding: 1%;
+    
 }
         
 main:after{
@@ -147,6 +147,10 @@ h1, h2, h3{
     text-align: center;
     background-color: darkkhaki;
 }
+
+h1{
+    font-size: 2em
+}
         
 p{
     background-color: burlywood;
@@ -171,9 +175,58 @@ p:first-letter{
     font-family: Georgia,"Times New Roman",sarif;
 }
 */
+
+nav{
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 70%;
+    min-width: 700px;
+    padding: 1%;
+    min-height: 100px;
+    background-color: darkseagreen;
+}
+
+#bloco1{
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    margin: 10px;
+}
+
+#scroll ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: fixed;
+}
+#scroll li{
+    list-style-type: none;
+    width: 78px;
+    height: 78px;
+    background-color: darkcyan;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
 footer{
-    background-color: aquamarine;
-    clear: both;
-    margin: 1%;
+    width: 70%;
+    min-width: 700px;
     text-align: center;
+    padding: 1%;
+    color: #999;
+    margin: 10px auto;
+    font-size: 0.8em;
+    background-color: #ddd;
+    border: 1px solid black;
+}
+
+address{
+    display: inline-block;
+    padding: 0px;
+    font-size: 0.8em
+}
+
+address a{
+    text-decoration: none;
+    color: #777
 }
